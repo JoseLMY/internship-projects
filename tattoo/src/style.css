@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.911);
+}
+/* STYLES OF HEADER */
+/* @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+.headerTop{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.877);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.616);
+    box-shadow: 1px 1px 32px rgb(0, 0, 0);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+.products, .about-us, .contact {
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Tektur', cursive;
+    margin: 0 32px;
+    font-size: large;
+    transition: all 0.5s;
+}
+.products:hover, .about-us:hover, .contact:hover{
+    color: rgb(141, 0, 24);
+    transform: scale(1.2);
+    border-bottom: 1px solid rgb(141, 0, 24);
+} */
+
+/* STYLES OF HOME */
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+.nameContainer{
+    width: 460px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.966);
+    position: absolute;
+    right: 56px;
+    top: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nameContainer2{
+    background-color: rgb(141, 0, 24);
+    width: 460px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    right: 62px;
+    top: 85px;
+}
+.title{
+    margin: 12px 0 16px 32px;
+    color: rgb(14, 176, 240);
+    font-family: 'Tektur', cursive;
+    font-weight: 900;
+    font-size: 48px;
+}
+.title2{
+    font-size: 48px;
+    margin: 13px 0 16px 40px;
+    color: white;
+    font-family: 'Tektur', cursive;
+    font-weight: 900;
+    position: absolute;
+}
+.imgFont{
+    margin: 0;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: -400px;
+}   
+
+/* STYLES OF FORM  */
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.856);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 1px 1px 32px black;
+    position: absolute;
+    top: 220px;
+    right: 32px;
+}
+.headerFormContainer{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    width: 100%;
+}
+.headerForm{
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 26px;
+    border-bottom: 1px solid black;
+    color: rgb(114, 114, 114);
+}
+#name, #email{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    outline: none;
+    width: calc(100% - 120px);
+    height: 32px;
+    padding-left: 32px;
+    margin: 0 0 12px 24px;
+    color: aliceblue;
+    font-weight: 600;
+}
+#name:focus, #email:focus, #message:focus{
+    background-color: black;
+
+}
+.labelMessage{
+    font-weight: 600;
+    margin: 16px;
+    /* color: rgb(157, 255, 255); */
+    color: rgb(109, 109, 109);
+    /* text-shadow: 1px 1px 16px rgb(0, 136, 255); */
+}
+#message{
+    resize: none;   
+    outline: none;
+    background-color: black;
+    border: 1px solid rgb(131, 131, 131);
+    padding: 16px 0 0 16px;
+    margin-bottom: 12px;
+    margin: 0 8px;
+    height: 36px;
+    color: white;
+    font-weight: 600;
+}
+.bSubmitContainer{
+    display: flex;
+    justify-content: center;
+}
+.bSubmit{
+    width: 120px;
+    height: 32px;
+    margin-top: 16px;
+    border: none;
+    background-color: rgba(255, 101, 101, 0.548);
+    border-radius: 8px;
+    font-weight: 900;
+}
+.bSubmit:hover{
+    background-color: rgba(211, 0, 0, 0.548);
+    cursor: pointer;
+    color: azure;
+}

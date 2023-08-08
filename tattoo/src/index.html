@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tattoo Shopping</title>
+  </head>
+  <body>
+      <!-- <header class='headerTop'>
+        <div class='links'>
+            <a href="/products" class='products'>Products</a>
+            <a href="/about-us" class='about-us'>About Us</a>
+            <a href="/contact" class='contact'>Contact</a>
+        </div>
+      </header> -->
+      
+      <div class="home">
+        <div class='nameContainer2'></div>
+        <div class='nameContainer'>
+            <h1 class='title'>NAME <span class="material-symbols-outlined">star </span> NAME..</h1>
+            <h1 class='title2'>NAME <span class="material-symbols-outlined">star </span> NAME..</h1>
+        </div>
+      </div>
+      <img class='imgFont' src="https://images.pexels.com/photos/2066223/pexels-photo-2066223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+      
+      <form id="form" class="form" action="https://formspree.io/f/xdorkvnj" method="POST"> <!--En el "action" de este formulario hice uso de una API que me permite hacer envios de los formularios a gmail pero sin que mi gmail quede revelado facilmente, el nombre del recurso que hicimos uso: formspree -->
+        <div class="headerFormContainer">
+            <label class="headerForm">Let's Talk:</label>
+        </div>
+        <input name="name" required type="text" id="name" placeholder='Full Name' autoComplete='off'/>
+        <input name="email" required type="text" id="email" placeholder='Your Email' autoComplete='off'/>
+        <label for="message" class="labelMessage">Your interests are important, write your message:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div class="bSubmitContainer">
+            <button type="submit" class="bSubmit" onClick={handleSubmit}>Send</button>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
