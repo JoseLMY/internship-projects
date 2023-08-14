@@ -14,40 +14,6 @@ a {
     color: black;
     font-size: 18px;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap'); */
-  /* STYLES OF HEADER */
-
-/* .headerTop{
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    height: 64px;
-    position: fixed;
-    display: flex;
-    justify-content: end;
-    background-color: rgba(0, 0, 0, 0.877);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.616);
-    box-shadow: 1px 1px 32px rgb(0, 0, 0);
-}
-
-.links{
-    display: flex;
-    align-items: center;
-}
-.products, .about-us, .contact {
-    width: 100px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Tektur', cursive;
-    margin: 0 32px;
-    font-size: large;
-    transition: all 0.5s;
-}
-.products:hover, .about-us:hover, .contact:hover{
-    color: rgb(141, 0, 24);
-    transform: scale(1.2);
-    border-bottom: 1px solid rgb(141, 0, 24);
-} */
 
 /* STYLES OF HOME */
 
@@ -56,6 +22,8 @@ a {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.911);   
+    background-image: url(https://images.pexels.com/photos/2066223/pexels-photo-2066223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
 }
 .nameContainer{
     width: 460px;
@@ -80,7 +48,6 @@ a {
 }
 .title{
     margin: 12px 0 16px 32px;
-    /* color: rgb(14, 176, 240);     */
     color: rgb(240, 14, 14);
     font-family: 'Tektur', cursive;
     font-weight: 900;
@@ -117,12 +84,12 @@ a {
 }
 .imgFont{
     margin: 0;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    translate: -400px;
+    translate: -160px;
 }   
 
 /* STYLES OF FORM  */
