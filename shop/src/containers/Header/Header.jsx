@@ -16,7 +16,7 @@ function Header() {
         <>
             <header className="header">
                 <div className='logo'>
-                    <h1>3-49 Productions</h1>
+                    <h1>3-49 Productions <span className='spanMaquina'>&#160;</span></h1>
                 </div>
                 <div className='items-container'>
                     <div className='items'>
@@ -27,11 +27,11 @@ function Header() {
                     </div>
                 </div>
                     <div className='shopping-cart'>
-                        <img src={shoppingCart}/>
+                        <img src={shoppingCart} alt='buy services'/>
                         <span className='spanCart'>2</span>
                     </div>
             </header>
-            <img src={iconMobile} className='iconMobile' onClick={handleToggle}/>
+            <img src={iconMobile} alt='buy services' className='iconMobile' onClick={handleToggle}/>
             {state && <Mobile/>}
         </>
     )

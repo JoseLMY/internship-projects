@@ -1,6 +1,4 @@
 import React from 'react'
-
-import shoppingCart from "../assets/shopping-cart.png"
 import "./Mobile.css"
 
 function Mobile() {

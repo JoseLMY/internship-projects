@@ -3,20 +3,33 @@
 }
 .header{
     position: fixed;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
     box-sizing: border-box;
     width: 100%;
-    height: 72px;
+    height: 70px;
+    background-color: black;
 }
 .logo h1{
-    width: 200px;
+    float: left;
+    position: relative;
+    width: 220px;
     font-family: var(--font-title);
     font-size: 28px;
     margin-left: 32px;
-    border-bottom: 1px solid white;
+    letter-spacing: 1px;
+}
+.spanMaquina{
+    position: absolute;
+    right: -6px;
+    width: 0;
+    background-color: black;
+    border-left: 1px solid white;
+    
+    animation: maquina 2s infinite alternate steps(16);
 }
 .items-container{
     display: flex;
@@ -34,14 +47,31 @@
     font-size: 22px;
     text-decoration: none;
     color: aliceblue;
+    padding: 6px;
+
+    transition: all 0.5s;
+}
+.items a:hover{
+    color: black;
+    background-color: aliceblue;
 }
 .shopping-cart {
-    padding-right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .shopping-cart img {
-    width: 28px;
+    width: 30px;
+}
+.shopping-cart:hover{
+    box-shadow: 0 0 12px gray;
 }
 .spanCart{
     text-align: center;
@@ -53,16 +83,30 @@
     border-radius: 50%;
     background-color: red;
 }
+
+@keyframes maquina {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
 @media (max-width: 620px){
     .items-container{
         display: none;
     }
     .logo h1{
-        margin-left: 0;
+        border-bottom: 1px solid white;
+        letter-spacing: normal;
+    }
+    .spanMaquina{
+        animation: none;
+        display: none;
+        background-color: transparent;
     }
     .shopping-cart {
-        padding-right: 72px;
-        top: 8px;
+        display: none;
     }
     .spanCart{
         right: 68px;
@@ -73,10 +117,29 @@
         width: 46px;
         margin: 0;
         opacity: 80%;
-        margin-top: 10px;
-        position: absolute;
+        position: fixed;
         z-index: 2;
-        top: 6px;
+        top: 16px;
         right: 16px;
+    }
+}
+@media (max-width: 820px){
+    .spanMaquina{
+        animation: none;
+        display: none;
+    }
+    .logo h1{
+        margin-left: 0;
+        max-width: 190px;
+        font-size: 24px;
+        animation: none;
+        border-bottom: 1px solid white;
+        letter-spacing: normal;
+    }
+    .items{
+        margin-right: 30px;
+    }
+    .items a{
+        padding: 0;
     }
 }

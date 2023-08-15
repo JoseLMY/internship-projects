@@ -8,7 +8,7 @@ function Home() {
         <>
             <section className='homeContainer'>
                 <div className='imgHome-container'>
-                    <img src={imgHome} alt="" />
+                    <img src={imgHome} alt="" className='imgHome'/>
                 </div>
                 <div className='nameContainer'>
                     <div className='logo'>
