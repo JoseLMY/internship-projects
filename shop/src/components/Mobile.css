@@ -1,0 +1,28 @@
+.itemsMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: aliceblue;
+    top: 86px;
+
+    animation: slideMobile 1s ease-in-out forwards;
+}
+.itemsMobile a{
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+}
+@keyframes slideMobile {
+    0%{
+        height: 0px;
+        opacity: 0%;
+    }
+    100%{
+        height: 660px;
+        opacity: 100%;
+    }
+}

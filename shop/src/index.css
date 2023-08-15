@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: aliceblue;
+}
+:root{
+  --font-title: 'Anton', sans-serif;
+  --font-p: 'Rajdhani', sans-serif;
+}
+.view{
+  display: none;
+}
