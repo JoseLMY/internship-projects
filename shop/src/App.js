@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {Header} from "./containers/Header/Header.jsx"
 import { Home } from './containers/Home/Home.jsx';
+import { Services } from './containers/Services/Services.jsx';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/Services' element={<Services />} />
+          {/* <Route path='/Services' element={<Services />} /> */}
           {/* <Route path='/hobbies' element={<Hobbies />} />
           <Route path='/sobre-mi' element={<SobreMi />} />
           <Route path='/tecnologias' element={<Tecnologias />} />
