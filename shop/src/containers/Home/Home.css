@@ -1,3 +1,15 @@
+
+#servicesContainer{
+    position: relative;
+}
+#contatUsContainer{
+    position: relative;
+    margin-top: 50%;
+}
+#aboutUsContainer{
+    position: absolute;
+    top: 300%;
+}
 .homeContainer{
     display: flex;
     position: relative;
@@ -60,6 +72,10 @@
 }
 
 @media (max-width: 700px){
+    #contatUsContainer{
+        position: relative;
+        margin-top: 290%;
+    }
     .cintaRotate{
         display: none;
     }
@@ -97,6 +113,9 @@
     .productions p{
         border-bottom: 1px solid white;
     }
+    #contatUsContainer{
+        top: 250%;
+    }
 }
 @media (min-width: 701px) and (max-width: 1020px){
     .cintaRotate{
@@ -129,5 +148,8 @@
         margin: 0;
         font-size: 300px;
         text-shadow: 0 0 120px #006c7ab7;
+    }
+    .logo p:hover{
+        transform: scale(1)
     }
 }

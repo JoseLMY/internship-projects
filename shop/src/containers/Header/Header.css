@@ -103,12 +103,10 @@
         display: none;
         background-color: transparent;
     }
-    .shopping-cart {
-        display: none;
-    }
     .spanCart{
-        right: 68px;
+        right: 30px;
         top: -4px;
+        width: 20px;
     }
     .iconMobile{
         display: block;

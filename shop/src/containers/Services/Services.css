@@ -1,0 +1,98 @@
+.servicesContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.tService{
+    position: absolute;
+    top: -20px;
+    left: 64px;
+    font-size: 40px;
+}
+.tService p{
+    border-bottom: 1px solid white;
+}
+.allProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 140px;
+}
+.ser-Marketing, .ser-publicity, .ser-consultancies{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    height: 320px;
+    box-sizing: border-box;
+    margin: 16px 32px;
+    border: 1px solid white;
+    user-select: none;
+    transition: all 0.5s;
+}
+.ser-Marketing:hover, .ser-publicity:hover, .ser-consultancies:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 32px rgba(0, 63, 100, 0.658);
+    .more{
+        color: rgb(196, 255, 255);
+        text-shadow: 0 0 8px rgba(0, 255, 255, 0.479);
+        transition: all 0.5s;
+        transform: scale(1.2);
+    }
+}
+.tt-service{
+    position: absolute;
+    top: 0;
+    border: 1px solid white;
+    width: 238px;
+    left: 0;
+}
+.tt-service p{
+    font-family: var(--font-p);
+    margin: 16px;
+    font-size: 24px;
+}
+.com-marketing, .com-publicity, .com-consultancies{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 66px;
+    font-family: var(--font-p);
+    height: 204px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.moreContainer{
+    width: 238px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.more{
+    color: white;
+    text-decoration: none;
+    width: auto;
+    margin-left: 40px;
+    transition: all 0.5s;
+}
+
+
+@media (max-width: 620px){
+    #servicesContainer{
+        top: -30px;
+    }
+    .allProducts{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
