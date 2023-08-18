@@ -4,7 +4,7 @@ import "./Home.css"
 import imgHome from "../../assets/img1.jpg"
 import { Services } from '../Services/Services'
 import { ContactUs } from '../Contact-us/ContactUs'
-// import { AboutUs } from '../About-us/AboutUs'
+import { AboutUs } from '../About-us/AboutUs'
 
 function Home() {
     return(
@@ -28,9 +28,9 @@ function Home() {
             <section id='contatUsContainer'>
                 <ContactUs />
             </section>
-            {/* <section id='aboutUsContainer'>
+            <section id='aboutUsContainer'>
                 <AboutUs />
-            </section> */}
+            </section>
         </>
     )
 }
