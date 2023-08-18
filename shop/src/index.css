@@ -17,7 +17,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 16px;
 }
 :root{
-  --font-title: 'Anton', sans-serif;
+  --font-title: 'Abril Fatface', cursive;
   --font-p: 'Rajdhani', sans-serif;
 }
 .view{

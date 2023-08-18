@@ -5,6 +5,7 @@ import imgHome from "../../assets/img1.jpg"
 import { Services } from '../Services/Services'
 import { ContactUs } from '../Contact-us/ContactUs'
 import { AboutUs } from '../About-us/AboutUs'
+import { FooterBar } from '../Footer-bar/FooterBar'
 
 function Home() {
     return(
@@ -30,6 +31,9 @@ function Home() {
             </section>
             <section id='aboutUsContainer'>
                 <AboutUs />
+            </section>
+            <section id='footerBarContainer'>
+                <FooterBar />
             </section>
         </>
     )

@@ -1,0 +1,97 @@
+.footerBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    background-color: rgba(10, 10, 10, 0.596);
+    height: 140px;
+}
+.logo-349-productios h1{
+    font-family: var(--font-title);
+    font-size: 32px;
+    text-shadow: 0 0 12px gray;
+    margin: 0;
+}
+.logo-349-productios p{
+    font-family: var(--font-p);
+    margin: 0;
+}
+.net-contact{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}   
+.networks a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 100;
+}
+.whatsaap, .instagram, .email{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 0;
+    
+    transition: all 0.5s;
+}
+.whatsaap:hover, .instagram:hover, .email:hover{
+    box-shadow: 0 0 8px gray;
+    transform: scale(1.08);
+}
+.imgWhatsApp{
+    margin-right: 8px;
+}
+.phone{
+    font-weight: 600;
+}
+
+@media (max-width: 700px){
+    .footerBar{
+        width: 340px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(10, 10, 10, 0.596);
+    }
+    .net-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .networks{
+        margin: 14px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .phone{
+        margin-bottom: 64px;
+    }
+}
+@media (min-width: 701px) and (max-width: 1020px){
+    .footerBar{
+        width: 68vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(10, 10, 10, 0.596);
+    }
+    .net-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .networks{
+        margin: 14px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .phone{
+        margin-bottom: 64px;
+        font-size: 24px;
+    }
+}

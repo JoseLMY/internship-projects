@@ -1,0 +1,71 @@
+.aboutUs-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.title-aboutUs h2{
+    margin-left: 64px;
+    margin-top: 120px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    border-bottom: 1PX solid white;
+    width: 300px;
+}
+.description-container{
+    display: flex;
+    box-sizing: border-box;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 50%;
+}
+.description-1{
+    background-color: rgba(32, 75, 112, 0.171);
+    padding: 0 48px;
+    box-sizing: border-box;
+    height: 480px;
+}
+.description-2{
+    background-color: rgb(255, 255, 255);
+    text-align: end;
+    padding: 0 48px;
+    box-sizing: border-box;
+    height: 480px;
+    color: black;
+}
+@media (max-width: 620px){
+    .title-aboutUs{
+        display: flex;
+        justify-content: center;
+    }
+    .title-aboutUs h2{
+        margin-top: 0;
+        font-size: 32px;
+        width: 240px;
+        margin-left: 0;
+    }
+    .description-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .description{
+        margin: 0;
+        width: 100%;
+    }
+    .description-1{
+        margin: 16px;
+        text-align: center;
+        height: auto;
+        background-color: rgba(32, 75, 112, 0.322);
+    }
+    .description-2{
+        margin:16px ;
+        text-align: center;
+        height: auto;
+    }
+}

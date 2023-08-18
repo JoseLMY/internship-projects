@@ -3,9 +3,8 @@
     position: absolute;
     top: 260px;
     left: 0;
-    background-color: antiquewhite;
     position: relative;
-
+    height: 100vh;
 }
 .headerFormPc{
     position: absolute;
@@ -156,6 +155,7 @@
     }
     .form{
         width: 100%;
+        height: 600px;
         left: 0;
         top: 100px;
     }
@@ -186,8 +186,8 @@
     }
     .form{
         width: 100%;
+        height: 860px;
         left: 0;
-        /* top: 600px; */
     }
     .inputsForm{
         top: 180px;

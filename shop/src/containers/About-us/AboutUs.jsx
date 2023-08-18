@@ -7,18 +7,18 @@ function AboutUs() {
             <div className='aboutUs-container'>
                 <div className='title-aboutUs'>
                     <h2>
-                        About Us
+                        - ABOUT US -
                     </h2>
                 </div>
-                <div className='aboutUs-container'>
-                    <div>
-                    <p>
-                        Potenciamos tu marca en el mundo digital. Conectamos ideas y creamos realidades a través de estrategias de marketing de vanguardia, producciones audiovisuales cautivadoras y asesorías personalizadas. Tu éxito es nuestro combustible. Únete a nosotros para transformar tu visión en resultados asombrosos.
-                    </p>
-                    </div>
-                    <div>
+                <div className='description-container'>
+                    <div className='description-1 description'>
                         <p>
-                        Con más de 6 años de experiencia, hemos elevado marcas a nuevas alturas. Desde revolucionar servicios hasta catalizar ideas de negocios, nuestro enfoque experto impulsa resultados. Nuestra destreza en producciones audiovisuales, incluyendo documentales y videos impactantes, amplifica tu mensaje. Únete a nosotros para desencadenar el poder de la innovación.
+                            We promote your brand in the digital world. We connect ideas and create realities through cutting-edge marketing strategies, captivating audiovisual productions and personalized advice. Your success is our fuel. Join us to transform your vision into amazing results.
+                        </p>
+                    </div>
+                    <div className='description-2 description'>
+                        <p>
+                            With over 6 years of experience, we have elevated brands to new heights. From revolutionizing services to catalyzing business ideas, our expert approach drives results. Our expertise in audiovisual productions, including powerful documentaries and videos, amplifies your message. Join us in unleashing the power of innovation.
                         </p>
                     </div>
                 </div>
