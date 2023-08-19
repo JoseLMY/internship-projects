@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {Header} from "./containers/Header/Header.jsx"
-import { Home } from './containers/Home/Home.jsx';
-import { Services } from './containers/Services/Services.jsx';
+import { Home } from "./pages/Home/Home.jsx";
+import { Marketing } from './pages/Marketing/Marketing.jsx';
 
 function App() {
   return (
@@ -12,13 +12,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Services' element={<Services />} />
-          {/* <Route path='/Services' element={<Services />} /> */}
-          {/* <Route path='/hobbies' element={<Hobbies />} />
-          <Route path='/sobre-mi' element={<SobreMi />} />
-          <Route path='/tecnologias' element={<Tecnologias />} />
-          <Route path='/contacto' element={<Contactame />} />
-          <Route path='*' element={<NotFound />} /> */}
+          <Route path='/Services/Marketing' element={<Marketing />} />
+          <Route path='/Services/Publicity' element={<Marketing />} />
+          <Route path='/Services/Consultancias' element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

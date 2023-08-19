@@ -6,7 +6,7 @@ function Header() {
         <>
             <header className="header">
                 <div className='logo'>
-                    <h1>3-49 Productions. <span className='spanMaquina'>&#160;</span></h1>
+                    <h1><a href="/" className='backHome'>3-49 Productions. <span className='spanMaquina'>&#160;</span></a></h1>
                 </div>
                 <div className='items-container'>
                     <div className='items'>

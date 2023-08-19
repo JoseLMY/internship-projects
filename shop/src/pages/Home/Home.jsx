@@ -2,10 +2,10 @@ import React from 'react'
 import "./Home.css"
 
 import imgHome from "../../assets/img1.jpg"
-import { Services } from '../Services/Services'
-import { ContactUs } from '../Contact-us/ContactUs'
-import { AboutUs } from '../About-us/AboutUs'
-import { FooterBar } from '../Footer-bar/FooterBar'
+import { Services } from '../../containers/Services/Services'
+import { ContactUs } from '../../containers/Contact-us/ContactUs'
+import { AboutUs } from '../../containers/About-us/AboutUs'
+import { FooterBar } from '../../containers/Footer-bar/FooterBar'
 
 function Home() {
     return(

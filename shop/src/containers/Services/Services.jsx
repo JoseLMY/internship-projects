@@ -19,7 +19,7 @@ function Services() {
                             </p>
                         </div>
                         <div className='moreContainer'>
-                            <a href="/Services/Marketing" target="_blank" rel="noopener noreferrer" className='more'>I wanna know more !</a>
+                            <a href="/Services/Marketing" rel="noopener noreferrer" className='more'>I wanna know more !</a>
                         </div>
                     </div>
                     <div className='ser-publicity'>
@@ -32,7 +32,7 @@ function Services() {
                             </p>
                         </div>
                         <div className='moreContainer'>
-                            <a href="/Services/Publicity" target="_blank" rel="noopener noreferrer" className='more'>I wanna know more !</a>
+                            <a href="/Services/Publicity" rel="noopener noreferrer" className='more'>I wanna know more !</a>
                         </div>
                     </div>
                     <div className='ser-consultancies'>
@@ -45,7 +45,7 @@ function Services() {
                             </p>
                         </div>
                         <div className='moreContainer'>
-                            <a href="/Services/Consultancias" target="_blank" rel="noopener noreferrer" className='more'>I wanna know more !</a>
+                            <a href="/Services/Consultancias" rel="noopener noreferrer" className='more'>I wanna know more !</a>
                         </div>
 
                     </div>
