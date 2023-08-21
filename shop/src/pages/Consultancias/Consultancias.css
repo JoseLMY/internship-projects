@@ -64,7 +64,7 @@
 .img-inf-consultancias h2{
     position: fixed;
     filter: blur(0); 
-    font-size: 50px;
+    font-size: 46px;
     font-family: var(--font-title);
     background-color: rgba(15, 41, 78, 0.233);
     width: 45%;
