@@ -1,6 +1,6 @@
 import React,  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import { Send } from '../../components/Send/Send';
+import swet from "sweetalert"
 
 import "./ContactUs.css"
 
@@ -8,16 +8,30 @@ function ContactUs() {
     const form = useRef();
 
     const sendEmail = (e) => {
-        e.preventDefault();
 
-        emailjs.sendForm('service_ya43oes', 'template_dwkg35g', form.current, 'F4W3EOTn9sBL3851q')
-        .then((result) => {
-            alert("Tu mensaje fue enviado exitosamente, pronto me contactaré contigo :)")
-            window.location.reload()
-        }, (error) => {
-            console.log(error.text);
-        });
+        const nameValidate = document.querySelector("#name").value
+        const emailValidate = document.querySelector("#email").value
+
+        e.preventDefault();
+        if(nameValidate === "" || emailValidate === ""){
+            swet({
+                icon: "error",
+                title: "Algo salio mal",
+                text: "Debes llenar todos los campos.",
+                button: "Aceptar"
+            })
+        } else {
+            emailjs.sendForm('service_ya43oes', 'template_dwkg35g', form.current, 'F4W3EOTn9sBL3851q')
+            .then((result) => {
+                alert("Tu mensaje fue enviado exitosamente, pronto nos contactaremos contigo ✔")
+                window.location.reload()
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
+        
     }
+
 
     return(
         <>
@@ -35,7 +49,7 @@ function ContactUs() {
                     </div>
                     <textarea id="message" name="message" placeholder='Your interests are important, write your message:'></textarea>
                     <div className="bSubmitContainer">
-                        <input className="iSubmit" type="submit" value="Send" />
+                        <input className="iSubmit" type="submit" value="Send"/>
                     </div>
                 </form>
             </div>
