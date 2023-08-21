@@ -24,7 +24,7 @@ function Services() {
                     </div>
                     <div className='ser-publicity'>
                         <div className="tt-service">
-                            <p>Publicity</p>
+                            <p>Audiovisual Production</p>
                         </div>
                         <div className='com-publicity'>
                             <p>

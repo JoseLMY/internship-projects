@@ -1,9 +1,9 @@
 .headerFormContainerPc{
-    display: block;
+    position: relative;
     position: absolute;
     top: 260px;
     left: 0;
-    position: relative;
+    width: 80%;
     height: 100vh;
 }
 .headerFormPc{
@@ -14,14 +14,13 @@
     color: white;
     font-size: 80px;
     border-bottom: 1px solid white;
-
     animation: zoom 4s infinite linear;
 }
 .formContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 640px;
+    width: 100% ;
     height: 100%;
 }
 .form{
@@ -42,9 +41,9 @@
 .headerFormContainer{
     position: absolute;
     top: 60px;
-    left: 80px;
     display: flex;
     justify-content: center;
+    width: 100%;
     font-weight: 900;
 }
 .headerForm{
@@ -100,7 +99,7 @@
     justify-content: center;
     position: absolute;
     bottom: 20px;
-    left: 210px;
+    width: 100%;
 }
 .iSubmit{
     width: 220px;
@@ -119,7 +118,6 @@
 }
 #trucazo{
     display: none;
-    /* opacity: 0; */
 }
 .p{
     color: red;
@@ -141,6 +139,17 @@
         color: rgb(32, 32, 32)
     }
 }
+@media (min-width: 400px) and (max-width: 607px){
+    .formContainer{
+        width: 100% ;
+        margin-top: 300px !important; 
+    }
+    .form{
+        width: 100%;
+        height: 600px;
+        left: 0;
+    }
+}
 
 @media (max-width: 700px){
     .headerFormContainerPc{
@@ -150,17 +159,18 @@
         display: block;
     }
     .formContainer{
-        position: relative;
-        width: 390px;
+        width: 100% ;
+        margin-top: 20px;
+    }
+    .inputsForm{
+        top: 180px;
+        width: 100%;
     }
     .form{
         width: 100%;
         height: 600px;
         left: 0;
-        top: 100px;
-    }
-    .inputsForm{
-        top: 180px;
+        /* top: 280px; */
     }
     #name, #email{
         width: 330px;
@@ -168,9 +178,9 @@
     .bSubmitContainer{
         display: flex;
         justify-content: center;
+        width: 100%;
         position: absolute;
         bottom: 20px;
-        left: 90px;
     }
 }
 @media (min-width: 701px) and (max-width: 1020px){
@@ -181,25 +191,26 @@
         display: block;
     }
     .formContainer{
-        position: relative;
         width: 100%;
+        margin-top: 400px;
     }
     .form{
         width: 100%;
         height: 860px;
         left: 0;
+        top: 240px;
     }
     .inputsForm{
         top: 180px;
+        width: 100%;
     }
-    #name, #email{
-        width: 67vh;
+    #email, #name{
+        width: 80%;
     }
     .bSubmitContainer{
         display: flex;
         justify-content: center;
         position: absolute;
         bottom: 20px;
-        left: 240px;
     }
 }

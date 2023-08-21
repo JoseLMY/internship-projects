@@ -1,25 +1,29 @@
 
 #servicesContainer{
-    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 #contatUsContainer{
     position: relative;
-    margin-top: 50%;
+    width: 100%;
+    height: 100vh;
 }
 #aboutUsContainer{
-    position: absolute;
-    top: 300%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 #footerBarContainer{
     position: relative;
-    margin-top: 66%;
+    width: 100%;
+    height: 20vh;
+    margin-top: 120px;
 }
 .homeContainer{
     display: flex;
-    /* flex-wrap: wrap;  */
-    position: relative;
-    height: 100vh;
-    width: auto;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 .imgHome-container{
     width: 50%;
@@ -49,7 +53,7 @@
 }
 .logo{
     font-family: var(--font-title);
-    margin: 0;
+    margin: 64px 0;
 }
 .logo p{
     margin: 0;
@@ -78,42 +82,43 @@
 }
 /* MEDIA QUERI'S PARA CEL */
 @media (max-width: 700px){
+    #servicesContainer{
+        margin-top: 820px;
+        width: 100%;
+    }
     #contatUsContainer{
-        position: relative;
-        margin-top: 320%;
+        margin-top: 490px;
     }
     #aboutUsContainer{
-        position: relative;
-        margin-top: 200%;
+        width: 100%;
+        height: 100vh;
+        margin-top: 150px;
     }
     #footerBarContainer{
         position: relative;
-        margin-top: 40%;
     }
     .cintaRotate{
         display: none;
     }
     .imgHome-container{
         width: 100%;
-        height: 580px;
+        height: auto;
         position: absolute;
         background-color: black;
-        background-image: none;
-        overflow: hidden;
-        top: 16px;
-        left: 0;
-        border-radius: 0;
+        left: 6px;
         opacity: 40%;
-        animation: none;
-        box-shadow: none;
     }
     .imgHome-container img{
         width: 100%;
         height: 100%;
-        animation: none;
         display: block;
     }
-    .nameContainer{
+    .primary{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+    }
+    .nameContainer{ 
         position: absolute;
         height: 420px;
         right: 12px;
@@ -122,7 +127,7 @@
     .logo p{
         color: rgb(255, 255, 255);
         margin: 0;
-        font-size: 160px;
+        font-size: 140px;
     }
     .logo p:hover{
         transform: scale(1)
@@ -131,49 +136,63 @@
         border-bottom: 1px solid white;
     }
 }
+.primary{
+    width: 100%;
+    height: 100vh;
+}
 /* MEDIA QUERI´S PARA iPAD */
 @media (min-width: 701px) and (max-width: 1020px){
+    #servicesContainer{
+        position: relative;
+        margin-top: 780px;
+        width: 100%;
+    }
     #contatUsContainer{
         position: relative;
-        margin-top: 140%;
+        width: 100%;
     }
     #aboutUsContainer{
-        margin-top: 180px;
+        margin-top: 250px;
+        width: 100%;
     }
     #footerBarContainer{
-        position: absolute;
-        top: 360%;
+        position: relative;
     }
-    .cintaRotate{
-        display: none;
+    .primary{
+        width: 100%;
+        height: 640px;
     }
     .imgHome-container{
         width: 100%;
-        height: 90vh;
+        height: auto;
         position: absolute;
         background-color: black;
         overflow: hidden;
         top: 16px;
-        left: 0;
         border-radius: 0;
         opacity: 40%;
     }
     .imgHome-container img{
-        width: 100%;
+        width: 780px;
+        max-width: 1160px;
         height: 100%;
         animation: none ;
     }
     .nameContainer{
         position: absolute;
         height: 420px;
-        right: 50px;
-
+        left: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
         animation: move 6s infinite;
     }
     .logo p{
-        margin: 0;
-        font-size: 300px;
+        font-size: 200px;
         text-shadow: 0 0 120px #006c7ab7;
+        margin-top: 400px;
     }
     .logo p:hover{
         transform: scale(1)
