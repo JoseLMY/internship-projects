@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Header} from "./containers/Header/Header.jsx"
 import { Home } from "./pages/Home/Home.jsx";
 import { Marketing } from './pages/Marketing/Marketing.jsx';
+import { ProdAudiovisual } from './pages/Prod-audiovisual/ProdAudiovisual.jsx';
+import { Consultancias } from './pages/Consultancias/Consultancias.jsx';
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Services/Marketing' element={<Marketing />} />
-          <Route path='/Services/Publicity' element={<Marketing />} />
-          <Route path='/Services/Consultancias' element={<Home />} />
+          <Route path='/Services/Audiovisual-production' element={<ProdAudiovisual />} />
+          <Route path='/Services/Consultancias' element={<Consultancias />} />
         </Routes>
       </BrowserRouter>
     </>

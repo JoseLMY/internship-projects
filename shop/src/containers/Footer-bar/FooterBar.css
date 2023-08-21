@@ -28,7 +28,7 @@
     font-size: 20px;
     font-weight: 100;
 }
-.whatsaap, .instagram, .email{
+.whatsaap, .instagram{
     border: 1px solid white;
     border-radius: 8px;
     padding: 12px;
@@ -37,7 +37,7 @@
     
     transition: all 0.5s;
 }
-.whatsaap:hover, .instagram:hover, .email:hover{
+.whatsaap:hover, .instagram:hover{
     box-shadow: 0 0 8px gray;
     transform: scale(1.08);
 }

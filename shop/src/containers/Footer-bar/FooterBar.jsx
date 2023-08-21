@@ -24,13 +24,15 @@ function FooterBar() {
                         <a href="https://www.instagram.com/3_49producciones/" target="_blank" rel="noopener noreferrer">Instagram</a>
                         
                     </div>
-                    <div className='networks email'>
-                        <img src={email} alt="img network 349 Productinos" width={20} className='imgWhatsApp'/>
-                        <a href="#contatUsContainer">Gmail</a>
-                    </div>
-                    <div className='networks phone'>
-                        <img src={phone} alt="img network 349 Productinos" width={20} className='imgWhatsApp'/>
-                            (601) 123 456 7890
+                    <div className='contactMe'>
+                        <div className='networks email'>
+                            <img src={email} alt="img network 349 Productinos" width={20} className='imgWhatsApp'/>
+                            349.productios@gmail.com
+                        </div>
+                        <div className='networks phone'>
+                            <img src={phone} alt="img network 349 Productinos" width={20} className='imgWhatsApp'/>
+                                (601) 123 456 7890
+                        </div>
                     </div>
                 </div>
             </div>

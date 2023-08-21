@@ -22,7 +22,7 @@ function Services() {
                             <a href="/Services/Marketing" rel="noopener noreferrer" className='more'>I wanna know more !</a>
                         </div>
                     </div>
-                    <div className='ser-publicity'>
+                    <div className='ser-prod-audio-visual'>
                         <div className="tt-service">
                             <p>Audiovisual Production</p>
                         </div>
@@ -32,7 +32,7 @@ function Services() {
                             </p>
                         </div>
                         <div className='moreContainer'>
-                            <a href="/Services/Publicity" rel="noopener noreferrer" className='more'>I wanna know more !</a>
+                            <a href="/Services/Audiovisual-production" rel="noopener noreferrer" className='more'>I wanna know more !</a>
                         </div>
                     </div>
                     <div className='ser-consultancies'>

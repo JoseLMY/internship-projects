@@ -23,7 +23,7 @@
     position: absolute;
     top: 220px;
 }
-.ser-Marketing, .ser-publicity, .ser-consultancies{
+.ser-Marketing, .ser-prod-audio-visual, .ser-consultancies{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     transition: all 0.5s;
     background-color: rgba(44, 44, 44, 0.281);
 }
-.ser-Marketing:hover, .ser-publicity:hover, .ser-consultancies:hover{
+.ser-Marketing:hover, .ser-prod-audio-visual:hover, .ser-consultancies:hover{
     transform: scale(1.08);
     box-shadow: 0 0 32px rgba(0, 63, 100, 0.658);
     .more{
